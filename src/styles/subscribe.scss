@@ -1,0 +1,40 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-row {
+        width: 30%;
+        @media (max-width: $s) {
+            width: 100%;
+          }
+        label {
+            
+            span {
+                display: none;
+            }
+            input {
+                text-align: center;
+                width: 100%;
+                padding: 8px 20px;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 2px solid rgb(0, 0, 0);
+            }
+            input:focus {
+                outline:none;
+            }
+        }
+    }
+    button {
+        margin-top: 16px;
+        background: none;
+        outline: none;
+        border: none;
+        display: flex;
+        padding: 15px 60px;
+        background-color: $text;
+        color: $background;
+        border-radius: 40px;
+    }
+}
