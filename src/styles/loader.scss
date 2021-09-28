@@ -1,9 +1,8 @@
 .loader-wrap {
     position: absolute;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
-    //background: rgb(29, 29, 29);
-    //color: whitesmoke;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);

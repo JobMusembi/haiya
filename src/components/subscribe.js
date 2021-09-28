@@ -29,7 +29,7 @@ export default class Subscribe extends React.Component {
                     <div className="form-row">
                         <label>
                             <span className="screen-reader-text">Email address</span>
-                            <input className="subscribe-email" type="email" name="email" placeholder="Email" onChange={this.handleChange} />
+                            <input className="subscribe-email" type="email" name="email" placeholder="Enter your email here" onChange={this.handleChange} />
                         </label>
                     </div>
                     <button className="button" type="submit">
