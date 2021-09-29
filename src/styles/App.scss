@@ -137,8 +137,8 @@
     width: 100%;
     .header-inner {
       span {
-        font-family: B;
-        font-size: $font8;   
+        //font-family: B;
+        font-size: $font7;   
         margin: 0;
       }
     }
@@ -167,9 +167,10 @@
         width: 100%;
       }
       h3 {
-        font-family: A;
+        //font-family: A;
         margin: 0;
         margin-bottom: 2rem;
+        letter-spacing: -1px;
       }
       p {
         margin: 0;
@@ -194,8 +195,8 @@
           width: 300px;
         }
         @media (max-width: $s) {
-          width: 100%;
-          margin-top: -100px;
+          width: 80%;
+          margin-top: -80px;
         }
       }
     }
