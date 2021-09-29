@@ -166,7 +166,7 @@
       @media (max-width: $s) {
         width: 100%;
       }
-      h3 {
+      h4 {
         //font-family: A;
         margin: 0;
         margin-bottom: 2rem;
@@ -190,7 +190,7 @@
       }
       img {
         width: 400px;
-        //margin-top: -50px;
+        height: 100%;
         @media (max-width: $s) {
           width: 300px;
         }
