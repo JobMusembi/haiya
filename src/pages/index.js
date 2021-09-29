@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { motion } from 'framer-motion';
 import Seo from "../components/seo"
+import heroHand from "../assets/images/hand.png"
 
 //import haiyaWordmark from "../assets/logo/haiya-wordmark.png"
 import Subscribe from "../components/subscribe"
@@ -48,53 +49,65 @@ const IndexPage = props => {
     }
   })
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{
-        duration: 1,
-        ease: [0.6, -0.05, 0.01, 0.9]
-      }}
-      className="index-wrap"
-    >
-      <Seo title="Home" />
-      <div className="header-wrap">
-        <div className="header-inner">
-          {/* <img src={haiyaWordmark} alt="wordmark" /> */}
-          <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span>
-        </div>
-        {/* <div className="haiya-statement">
-          <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A — A Freelancing Tool for Creative Professionals. <br /> We are currently working on an improved version of haiya.
-            Get the advantage and subscribe to our mailing list for more information on our product launch and what’s to come.
-            For any questions/inquiries or feedback → hello@haiya.app</span>
-        </div> */}
-      </div>
-      <div className="subscribe-section">
-        <Subscribe />
-      </div>
+    <motion.div className="container">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{
+          duration: 1,
+          ease: [0.6, -0.05, 0.01, 0.9]
+        }}
+        className="index-wrap"
+      >
+        <Seo title="HOME" />
 
-      <div className="footer-position">
-        <div className="footer-wrap">
-          <div className="footer-socials">
-            <a href="https://www.instagram.com/haiyaapp/" target="_blank" rel="noopener noreferrer">
-              <Instagram />
-            </a>
-            <a href="/" target="_blank">
-              <Linkedin />
-            </a>
-            <a href="/" target="_blank">
-              <Twitter />
-            </a>
-            <a href="/" target="_blank">
-              <Facebook />
-            </a>
-          </div>
-          <div className="footer-outro">
-            <h5>All Rights Reserved.</h5>
+        {/* header */}
+        <div className="header-wrap">
+          <div className="header-inner">
+            <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span>
           </div>
         </div>
-      </div>
+
+        {/* statement */}
+        <div className="hero-wrap">
+          <div className="hero-text">
+            <h3>Work in Progress.</h3>
+            <p>We are currently building a better version of
+              HAIYA - A freelancing tool for Kenyan creative
+              professionals. Stay tuned and subscribe to our
+              mailing list for updates on exciting things coming
+              for haiya.app <br /> <br /> -Haiya Team</p>
+            <Subscribe />
+          </div>
+          <div className="hero-image">
+            <img src={heroHand} alt="3d-hand" />
+          </div>
+        </div>
+
+        {/* footer */}
+        <div className="footer-position">
+          <div className="footer-wrap">
+            <div className="footer-mail">
+              <p>If you have any questions, please email hello@haiya.app</p>
+            </div>
+            <div className="footer-socials">
+              <a href="https://www.instagram.com/haiyaapp/" target="_blank" rel="noopener noreferrer">
+                <Instagram />
+              </a>
+              <a href="/" target="_blank">
+                <Linkedin />
+              </a>
+              <a href="/" target="_blank">
+                <Twitter />
+              </a>
+              <a href="/" target="_blank">
+                <Facebook />
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </motion.div>
   )
 }

@@ -1,20 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-//const transition = { duration: 0.5, ease: [0.6, -0.05, 0.01, 0.9] }
 
 const Loader = () => {
 
     return (
-        <motion.div className="loader-wrap"
-        // initial={{ opacity: 0 }}
-        // animate={{ opacity: 1 }}
-        // exit={{ opacity: 0 }}
-        // transition={{
-        //     duration: 0.5,
-        //     ease: [0.6, -0.05, 0.01, 0.9]
-        // }}
-        >
+        <motion.div className="loader-wrap">
             <motion.div className="wordmark">
                 <motion.span
                     initial={{ opacity: 0 }}

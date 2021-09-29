@@ -1,25 +1,27 @@
 form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+    width: 90%;
+    @media (max-width: $s) {
+        width: 100%;
+      }
     .form-row {
-        width: 30%;
-        @media (max-width: $s) {
-            width: 100%;
-          }
         label {
-            
             span {
                 display: none;
             }
             input {
-                text-align: center;
                 width: 100%;
-                padding: 8px 20px;
+                padding: 8px 20px 8px 0px;
                 box-sizing: border-box;
                 border: none;
                 border-bottom: 1px solid $text;
+                background-color: $background;
+                color: $text;
+            }
+            input::placeholder {
+                color: $text;
+                opacity: 0.5;
             }
             input:focus {
                 outline:none;
@@ -27,22 +29,22 @@ form {
         }
     }
     button {
+        width: 100%;
+        height: 56px;
         margin-top: 16px;
         background: none;
         outline: none;
-        border: 1px solid $text;
+        border: none;
         display: flex;
-        padding: 15px 60px;
-        background-color: #3C1053;
+        align-items: center;
+        justify-content: center;
+        background-color: $text;
         color: $background;
-        // background-color: none;
-        // color: $text;
-        //border-radius: 40px;
         font-size: $font8;
-        font-weight: 400;
+        border-radius: 40px;
         &:hover {
-            //border: none;
-            background-color: none;
+            border: 1px solid $text;
+            background-color: $background;
             color: $text;
         }
     }

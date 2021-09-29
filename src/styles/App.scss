@@ -4,6 +4,21 @@
 @import "./loader.scss";
 @import "./subscribe.scss";
 
+@font-face {
+  font-family: A;
+  src: url(../fonts/FormulaCondensed-Light.otf) format("opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: B;
+  src: url(../fonts/TechniqueSans.otf) format("opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -15,7 +30,8 @@
   body {
     height: 100%;
     font-size: 16px;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: A;
+    //font-family: "A", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: $background;
     color: $text;
     -webkit-font-smoothing: antialiased;
@@ -28,7 +44,7 @@
   h3,
   h4,
   h5 {
-    font-family: Inter;
+    //font-family: Inter;
     margin: 2.75rem 0 1.05rem;
     line-height: 1.15;
     font-weight: normal;
@@ -85,13 +101,7 @@
   
   p {
     line-height: 1.5;
-    font-size: $font6;
-    letter-spacing: 0.5;
-    // text-align: justify;
-    // text-justify: inter-word;
-    @media (max-width: $m) {
-      font-size: $font6;
-    }
+    font-size: $font8;
   }
 
   .container {
@@ -114,21 +124,88 @@
 
   .index-wrap {
     position: relative;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: 100%;
     width: 100%;
   }
   
+  //header
+
+  .header-wrap {
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    .header-inner {
+      span {
+        font-family: B;
+        font-size: $font8;   
+        margin: 0;
+      }
+    }
+  }
+
+  //statement
+  .hero-wrap {
+    position: relative;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @media (max-width: $s) {
+      flex-direction: column;
+      padding: 0px;
+      margin-top: 9rem;
+    }
+    .hero-text {
+      width: 50%;
+      height: fit-content;
+      @media (max-width: $s) {
+        width: 100%;
+      }
+      h3 {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+      p {
+        margin: 0;
+        width: 100%;
+        @media (max-width: $s) {
+          width: 100%;
+        }
+      }
+    }
+    .hero-image {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $s) {
+        width: 100%;
+      }
+      img {
+        width: 400px;
+        //margin-top: -50px;
+        //height: fit-content;
+        @media (max-width: $s) {
+          width: 100%;
+          margin-top: -100px;
+        }
+      }
+    }
+  }
+
+
+
   //footer
 
   .footer-position {
-      position: absolute;
+    display: none;
+      //position: absolute;
       width: 100%;
       bottom: 3rem;
     .footer-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      .footer-mail {
+
+      }
       .footer-socials {
           display: flex;
           position: relative;
@@ -138,72 +215,17 @@
               width: 40px;
               height: 40px;
               padding: 8px;
+              &:first-child {
+                padding-left: 0px;
+              }
               svg {
               width: 100%;
               height: 100%;
               }
           }
       }
-      .footer-outro {
-          h5 {
-              font-size: 12px;
-              padding-top: 8px;
-              margin: 0;
-              opacity: 0.5;
-          }
-      }
   }
   }
 
-  //subscribe
-
-  .subscribe-section {
-    position: absolute;
-    width: 100%;
-    bottom: 15rem;
-    @media (max-width: $s) {
-      bottom: 18rem;
-    }
-  }
-
-  //header
-
-  .header-wrap {
-    position: fixed;
-    top: 3rem;
-    width: 100%;
-    .header-inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      // img {
-      //   //height: ;
-      //   width: 80px;
-      // }
-      span {
-        font-size: $font7;
-        font-weight: 500;
-        //letter-spacing: 10px;       
-        margin: 0;
-      }
-    }
-    .haiya-statement {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      //text-align: center;
-      //background: chartreuse;
-      margin-top: 1rem;
-      span {
-        width: 40%;
-        font-size: 12px;
-        text-align: center;
-        //text-justify: inter-word;
-        @media (max-width: $s) {
-          width: 80%;
-        }
-      }
-    }
-  }
+ 
+  
