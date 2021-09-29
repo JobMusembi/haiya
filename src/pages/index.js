@@ -60,7 +60,7 @@ const IndexPage = props => {
         }}
         className="index-wrap"
       >
-        <Seo title="HOME" />
+        <Seo title="Home" />
 
         {/* header */}
         <div className="header-wrap">

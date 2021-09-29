@@ -42,10 +42,12 @@ form {
         color: $background;
         font-size: $font8;
         border-radius: 40px;
+        font-family: A;
         &:hover {
             border: 1px solid $text;
             background-color: $background;
             color: $text;
+            transition: 0.3s;
         }
     }
 }
