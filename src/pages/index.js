@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { motion } from 'framer-motion';
 import Seo from "../components/seo"
-import heroHand from "../assets/images/hand.png"
+import heroHand from "../assets/images/wip.svg"
 
-//import haiyaWordmark from "../assets/logo/haiya-wordmark.png"
+import haiyaWordmark from "../assets/logo/haiya-wordmark.png"
 import Subscribe from "../components/subscribe"
 import { Facebook, Instagram, Linkedin, Twitter } from '../assets/svg/social-icons';
 
@@ -65,19 +65,20 @@ const IndexPage = props => {
         {/* header */}
         <div className="header-wrap">
           <div className="header-inner">
-            <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span>
+            <img src={haiyaWordmark} alt="wordmark" />
+            {/* <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span> */}
           </div>
         </div>
 
         {/* statement */}
         <div className="hero-wrap">
           <div className="hero-text">
-            <h4>Work in Progress. 🚧</h4>
+            <h4>🚧 Work in Progress.</h4>
             <p>We are currently building a better version of
               HAIYA - A freelancing tool for Kenyan creative
               professionals. Stay tuned and subscribe to our
               mailing list for updates on exciting things coming
-              for haiya.app <br /> <br /> -Haiya Team</p>
+              for haiya.app <br /><br />If you have any questions, please email hello@haiya.app <br /><br /> -Haiya Team</p>
             <Subscribe />
           </div>
           <div className="hero-image">
@@ -88,8 +89,8 @@ const IndexPage = props => {
         {/* footer */}
         <div className="footer-position">
           <div className="footer-wrap">
-            <div className="footer-mail">
-              <p>If you have any questions, please email hello@haiya.app</p>
+            <div className="footer-year">
+              <p>2021.</p>
             </div>
             <div className="footer-socials">
               <a href="https://www.instagram.com/haiyaapp/" target="_blank" rel="noopener noreferrer">
@@ -105,6 +106,7 @@ const IndexPage = props => {
                 <Facebook />
               </a>
             </div>
+
           </div>
         </div>
       </motion.div>

@@ -101,7 +101,7 @@
   
   p {
     line-height: 1.5;
-    font-size: $font8;
+    font-size: 14px;
     font-family: B;
   }
 
@@ -136,11 +136,15 @@
     top: 3rem;
     width: 100%;
     .header-inner {
-      span {
-        //font-family: B;
-        font-size: $font7;   
-        margin: 0;
+      img {
+        width: 64px;
+        height: 100%;
       }
+      // span {
+      //   //font-family: B;
+      //   font-size: $font7;   
+      //   margin: 0;
+      // }
     }
   }
 
@@ -149,7 +153,10 @@
     position: relative;
     padding: 0 150px;
     display: flex;
+    height: 100vh;
+    //background: cornflowerblue;
     align-items: center;
+    //justify-content: center;
     width: 100%;
     @media (max-width: $m) {
       padding: 0 70px;
@@ -161,27 +168,36 @@
       margin-top: 9rem;
     }
     .hero-text {
+      display: flex;
+      //background: chocolate;
+      //align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1;
       width: 50%;
       height: fit-content;
       @media (max-width: $s) {
         width: 100%;
       }
       h4 {
-        //font-family: A;
         margin: 0;
         margin-bottom: 2rem;
         letter-spacing: -1px;
       }
       p {
         margin: 0;
-        width: 100%;
+        width: 80%;
+        // text-align: justify;
+        // text-justify: inter-word;
         @media (max-width: $s) {
           width: 100%;
         }
       }
     }
     .hero-image {
+      //background: chocolate;
       position: relative;
+      z-index: -1;
       width: 50%;
       display: flex;
       justify-content: center;
@@ -189,14 +205,14 @@
         width: 100%;
       }
       img {
-        width: 400px;
+        width: 100%;
         height: 100%;
+        // @media (max-width: $m) {
+        //   width: 300px;
+        // }
         @media (max-width: $s) {
-          width: 300px;
-        }
-        @media (max-width: $s) {
-          width: 80%;
-          margin-top: -80px;
+          width: 100%;
+          margin-top: 32px;
         }
       }
     }
@@ -210,11 +226,10 @@
     display: none;
       //position: absolute;
       width: 100%;
-      bottom: 3rem;
+      bottom: 2rem;
     .footer-wrap {
-      .footer-mail {
-
-      }
+      display: flex;
+          justify-content: space-between;
       .footer-socials {
           display: flex;
           position: relative;
