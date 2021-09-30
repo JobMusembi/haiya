@@ -100,8 +100,8 @@ h5 {
 
 p {
   line-height: 1.5;
-  font-size: 14px;
-  font-weight: 200;
+  font-size: $font8;
+  font-weight: 300;
   //font-family: B;
 }
 
@@ -178,7 +178,7 @@ p {
     }
     h4 {
       font-weight: 600;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       margin: 0;
       margin-bottom: 2rem;
       letter-spacing: -1px;
@@ -203,7 +203,7 @@ p {
     justify-content: center;
     @media (max-width: $s) {
       width: 100%;
-      margin: 3rem 0;
+      margin: 3rem 0 5rem 0;
     }
     img {
       width: 100%;
@@ -217,7 +217,7 @@ p {
       bottom: 2rem;
       right: 0;
       @media (max-width: $s) {
-        bottom: -2rem;
+        bottom: -3rem;
       }
       .footer-socials {
         display: flex;
