@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Seo from "../components/seo"
 import heroHand from "../assets/images/wip.svg"
 
-import haiyaWordmark from "../assets/logo/haiya-wordmark.png"
+//import haiyaWordmark from "../assets/logo/haiya-wordmark.png"
 import Subscribe from "../components/subscribe"
 import { Facebook, Instagram, Linkedin, Twitter } from '../assets/svg/social-icons';
 
@@ -65,15 +65,15 @@ const IndexPage = props => {
         {/* header */}
         <div className="header-wrap">
           <div className="header-inner">
-            <img src={haiyaWordmark} alt="wordmark" />
-            {/* <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span> */}
+            {/* <img src={haiyaWordmark} alt="wordmark" /> */}
+            <span>H&nbsp;A&nbsp;I&nbsp;Y&nbsp;A</span>
           </div>
         </div>
 
         {/* statement */}
         <div className="hero-wrap">
           <div className="hero-text">
-            <h4>🚧 Work in Progress.</h4>
+            <h4>Site Closed! 🔒 <br />Work in Progress. 🚧</h4>
             <p>We are currently building a better version of
               HAIYA - A freelancing tool for Kenyan creative
               professionals. Stay tuned and subscribe to our
@@ -83,15 +83,8 @@ const IndexPage = props => {
           </div>
           <div className="hero-image">
             <img src={heroHand} alt="3d-hand" />
-          </div>
-        </div>
-
-        {/* footer */}
-        <div className="footer-position">
+            <div className="footer-position">
           <div className="footer-wrap">
-            <div className="footer-year">
-              <p>2021.</p>
-            </div>
             <div className="footer-socials">
               <a href="https://www.instagram.com/haiyaapp/" target="_blank" rel="noopener noreferrer">
                 <Instagram />
@@ -109,6 +102,11 @@ const IndexPage = props => {
 
           </div>
         </div>
+          </div>
+        </div>
+
+        {/* footer */}
+        
       </motion.div>
     </motion.div>
   )
