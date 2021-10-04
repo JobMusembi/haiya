@@ -73,7 +73,7 @@ const IndexPage = props => {
         {/* statement */}
         <div className="hero-wrap">
           <div className="hero-text">
-            <h4>Site Closed! 🔒 <br />Work in Progress. 🚧</h4>
+            <h4>Work in Progress. 🚧 <br /> Site Closed! 🔒 </h4>
             <p>We are currently building a better version of
               HAIYA - A freelancing tool for Kenyan creative
               professionals. Stay tuned and subscribe to our
